@@ -17,7 +17,7 @@ document.querySelector('#quiz').addEventListener('submit', function(event) {
 document.getElementById('continue-btn').addEventListener('click', function() {
     document.querySelector('#thankyou').classList.remove('show');
     setTimeout(function() {
-        window.location.href = 'index.html';
+        window.location.href = 'main.html';
     }, 500);
     
 });
