@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .header {
+    background-color: #81b3e6;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: red;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: medium;
+    font-weight: 600;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1a942e;
+    border: black;
+    border-color: rgb(145, 185, 50);
+    border-style: solid;
+    border-radius: 5px;
+    
+  }
+
+  .nav li {
+    float: left;
+  }
+
+  .nav li a {
+    display: block;
+    color: rgb(201, 220, 230);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: #0f1214;
+  }
+  
+  .nav li a:hover {
+    background-color: #29be5b;
+    border: black;
+  }
+
+  nav ul {
+    background-color: #234567; 
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#profile-picture {
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.text-content {
+    max-width: 60%;
+}
+
+.blog-posts {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.footer {
+    background-color: #123456; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    border: 1px solid #ccc;
+    background-color: #dcece3;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    /*background: linear-gradient(to right, transparent 0%, transparent 70%, #ccc 70%, #ccc 100%);*/
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+.modal-content {
+    background-color: #d16e6e;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+  
+  
+  
+
+
+
