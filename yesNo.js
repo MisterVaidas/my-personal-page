@@ -1,3 +1,10 @@
+"use strict";
+
+// Get the user's name
+let userName = prompt("What is your name?");
+// Display a personalized welcome message
+alert(`Hello, ${userName}! Welcome to my site! Before enter, please answer 5 questions abou me.`);
+
 let questions = [
     {
         question: "Am I a cat person? (y/n)",
