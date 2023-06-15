@@ -6,24 +6,33 @@ body {
   }
 
   .header {
-    background-color: #81b3e6;
-    text-align: center;
+    background-color: #6aa8e6;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: red;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
   }
 
   h1 {
-    font-size: 25px;
-    font-style: normal;
+    text-align: left;
+    font-size: 50px;
+    color: red;
     font-weight: bold;
+    padding: 5px;
+   
+
   }
 
   h2 {
     font-size: medium;
     font-weight: 600;
+  }
+
+  h3 {
+    text-align: left;
+    font-size: medium;
+    padding: 5px;
+    color:#201e13c9;
   }
 
   .nav {
@@ -74,21 +83,26 @@ nav ul li {
 
 
 
-main {
-    display: flex;
+/*main {
+    display: relative;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-}
+}*/
 
 #profile-picture {
     width: 400px;
     height: 400px;
     margin-right: 20px;
+    align-items:flex-start;
+    border: #234567;
+   
 }
 
 .text-content {
     max-width: 60%;
+    align-items: center;
+    border-color: #123456;
 }
 
 .blog-posts {

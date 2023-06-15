@@ -3,35 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Quiz</title>
-    <link rel="stylesheet" href="quiz.css">
-    <!--<script src="quiz.js"></script>-->
+    <title>My personal page</title>
+    <link rel="stylesheet" href="reset.css">
+    <!--<link rel="stylesheet" type="text/css" href="styles.css">-->
+    <link rel="stylesheet" href="testStyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <!--<script src="script.js"></script>-->
 </head>
-<body class="quiz-body">
-    <div class="quiz-container">
-        <h1 class="quiz-title">Welcome! Please take a moment to answer these quick questions:</h1>
-        <form id="quiz" class="quiz-form">
-            <label for="name" class="quiz-label">What is your name?</label>
-            <input type="text" id="name" name="name" class="quiz-input" required><br>
-            <label for="age" class="quiz-label">How old are you?</label>
-            <input type="text" id="age" name="age" class="quiz-input" required><br>
-            <label for="location" class="quiz-label">Where are you from?</label>
-            <input type="text" id="location" name="location" class="quiz-input" required><br>
-            <label for="occupation" class="quiz-label">What is your occupation?</label>
-            <input type="text" id="occupation" name="occupation" class="quiz-input" required><br>
-            <label for="hobbies" class="quiz-label">Do you have any hobbies?</label>
-            <input type="text" id="hobbies" name="hobbies" class="quiz-input" required><br>
-        </form>
-        <button type="submit" form="quiz" class="quiz-submit">Submit</button>
+<body>
+    <div class="header">
+        <h1>Vaidas Simkus</h1>
+        <h3>Empowered by Passion, Driven by Purpose!</h3>
+        <h3>Nickname: MisterVaidas</h3>
     </div>
-   
-    <div id="thankyou" class="hidden">
-        <h2>Thank you for submitting the quiz!</h2>
-        <p id="ty-msg">We appreciate your time, </p>
-        <button id="continue-btn">Take me to the website</button>
+    <nav>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">My Interests</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact Me</a></li>
+    </ul>
+    </nav>
+    <main>
+        <section class="container">
+        <div class="profile">
+            <img id="profile-picture" src="image1.png" alt="Profile Picture">
+        </div>
+        </section>
+        <section class="container">
+        <div class="text-content">
+        <h2>Welcome to my personal website!</h2>
+        <p>Hello, I'm Vaidas Simkus, currently immersed in an intensive bootcamp, sharpening my skills 
+            in web and software development. Having made a bold career shift towards IT, I find myself 
+            fascinated and motivated by the ever-evolving landscape of technology.
+        </p>
+        <p>I am currently investing my energy into a promising DeFi project. The learnings from my 
+            course are not only nurturing my curiosity but also equipping me with the knowledge to 
+            advance my project.
+        </p>
+        <p>Five years from now, I see myself as a seasoned professional in the realm of web and software 
+            development, contributing to the blockchain space and influencing the dynamics of DeFi. With 
+            a view to mastering blockchain development, I plan to dive deeper into the subject post my 
+            current course.
+        </p>
+        <p>While I may not boast any formal work experience in this domain yet, my passion for the 
+            subject matter, my dedication to my ongoing projects, and my commitment to continuous learning 
+            more than compensate for it.
+        </p>
+        <p>Beyond the sphere of technology, I have a keen interest in reading - which helps me broaden my 
+            horizons, fitness - which keeps me energetic, and basketball - a sport that teaches me teamwork. 
+            I also indulge in forex trading, which perfectly blends my analytical skills with my 
+            fascination for finance.
+        </p>
+        </div>
+        </section>
+        <section class="container">
+        <div class="blog-posts">
+        <h3>My Blog Posts</h3>
+
+        <ul>
+            <li><a href="#">Blog Post 1</a></li>
+            <li><a href="#">Blog Post 2</a></li>
+            <li><a href="#">Blog Post 3</a></li>
+
+        </ul>
+        </div>
+        </section>
+    </main>
+    <section class="container">
+    <div>
+    <footer>
+        <h3>Connect with me</h3>
+        <div class="sharethis-inline-follow-buttons"></div>
+    </footer>
     </div>
+    </section>
+
+    <!--<div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Welcome to my site! Please take a moment to answer these quick questions:</p>
+          <form id="quiz">
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">How old are you?</label>
+            <input type="text" id="age" name="age" required><br>
+            <label for="location">Where are you from?</label>
+            <input type="text" id="location" name="location" required><br>
+            <label for="occupation">What is your occupation?</label>
+            <input type="text" id="occupation" name="occupation" required><br>
+            <label for="hobbies">Do you have any hobbies?</label>
+            <input type="text" id="hobbies" name="hobbies" required><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+    </div>-->
     
+      
+
+
     
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6482f5228bdd800012e15fa3&product=inline-follow-buttons&source=platform" async="async"></script> 
+    <!--<script src="script.js"></script>-->
+
+    <!--<script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+        // On form submit, prevent actual form submission and display the input name
+        document.getElementById('quiz').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var name = document.getElementById('name').value;
+            alert("Hello, " + name + "! Thank you for participating.");
+            modal.style.display = "none";
+        });
+    
+        // Show the modal as soon as the page loads
+        window.onload = function() {
+            modal.style.display = "block";
+        }
+    </script>-->
     <script src="quiz.js"></script>
 </body>
 </html>

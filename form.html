@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <!--<script src="quiz.js"></script>-->
+</head>
+<body class="quiz-body">
+    <div class="quiz-container">
+        <h1 class="quiz-title">Welcome! Please take a moment to answer these quick questions:</h1>
+        <form id="quiz" class="quiz-form">
+            <label for="name" class="quiz-label">What is your name?</label>
+            <input type="text" id="name" name="name" class="quiz-input" required><br>
+            <label for="age" class="quiz-label">How old are you?</label>
+            <input type="text" id="age" name="age" class="quiz-input" required><br>
+            <label for="location" class="quiz-label">Where are you from?</label>
+            <input type="text" id="location" name="location" class="quiz-input" required><br>
+            <label for="occupation" class="quiz-label">What is your occupation?</label>
+            <input type="text" id="occupation" name="occupation" class="quiz-input" required><br>
+            <label for="hobbies" class="quiz-label">Do you have any hobbies?</label>
+            <input type="text" id="hobbies" name="hobbies" class="quiz-input" required><br>
+        </form>
+        <button type="submit" form="quiz" class="quiz-submit">Submit</button>
+    </div>
+   
+    <div id="thankyou" class="hidden">
+        <h2>Thank you for submitting the quiz!</h2>
+        <p id="ty-msg">We appreciate your time, </p>
+        <button id="continue-btn">Take me to the website</button>
+    </div>
+    
+    
+    <script src="quiz.js"></script>
+</body>
+</html>
