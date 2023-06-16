@@ -5,6 +5,7 @@ alert(`Hello, ${userName}! Welcome to the About Me Guessing Game.`);
 
 // Array of questions and answers
 let questions = [
+    //...previous questions...
     {
         question: "Am I a cat person? (y/n)",
         answer: "y",
@@ -26,52 +27,68 @@ let questions = [
         answer: "y",
     },
 
-    // The new numeric question
     {
         question: "What is my age?",
         answer: "41",
+    },
+    {
+        question: "Can you guess who is my favorite business person?",
+        answers: ["Warren Buffet", "Jeff Bezos", "Ellon Musk", "Jack Ma", "Richard Branson"],
     },
 ];
 
 // Loop through each question
 questions.forEach((item, index) => {
-    // Check if the current question is not the last one
-    if (index !== questions.length - 1) {
-        // Ask the question and normalize the answer to lowercase
+    if (index < questions.length - 2) {
+        // Previous logic for yes/no questions
         let answer = prompt(item.question).toLowerCase();
-        // Convert 'yes'/'no' to 'y'/'n'
         if (answer === 'yes') answer = 'y';
         if (answer === 'no') answer = 'n';
-        // Check the answer and give feedback
         if (answer === item.answer) {
             alert("Correct! Well done.");
         } else {
             alert("Incorrect. The correct answer was " + (item.answer === 'y' ? 'yes' : 'no'));
         }
-    } else {
-        // For the last question, the user has four attempts
+    } else if (index === questions.length - 2) {
+        // Logic for numeric question
         let attempts = 4;
         let correct = false;
         while (attempts > 0) {
-            // Ask the question, indicating how many attempts are left
             let answer = prompt(item.question + `\nYou have ${attempts} attempts left.`);
-            // Check if the answer is correct
             if (Number(answer) === Number(item.answer)) {
                 alert("Correct! Well done.");
                 correct = true;
                 break;
             } else if (Number(answer) < Number(item.answer)) {
-                // If the guess is too low, inform the user
                 alert("Too low. Try again.");
             } else if (Number(answer) > Number(item.answer)) {
-                // If the guess is too high, inform the user
                 alert("Too high. Try again.");
             }
             attempts--;
         }
-        // If the user didn't guess the number, inform them of the correct answer
         if (!correct) {
             alert(`Sorry, you didn't guess the number. The correct answer was ${item.answer}.`);
+        }
+    } else {
+        // Logic for multiple answers question
+        let attempts = 6;
+        let correct = false;
+        while (attempts > 0 && !correct) {
+            let answer = prompt(item.question + `\nYou have ${attempts} attempts left.`).toLowerCase();
+            for(let i = 0; i < item.answers.length; i++) {
+                if (answer.toLowerCase() === item.answers[i].toLowerCase()) {
+                    alert("Correct! Well done!");
+                    correct = true;
+                    break;
+                }
+            }
+            if (!correct) {
+                alert("Sorry, that's incorrect. Try again.");
+            }
+            attempts--;
+        }
+        if (!correct) {
+            alert(`Sorry, you didn't guess my favorite person. The correct answers were ${item.answers.join(", ")}.`);
         }
     }
 });
