@@ -101,11 +101,10 @@
     
   }
 
-  /* Add styles for your profile picture */
 .text-content img#profile-picture {
-  float: left; /* This can also be 'right' if you want the image to float to the right */
-  margin-right: 20px; /* This adds some space between the image and the text */
-  width: 100px; /* Adjust this to make your image the size you want */
+  float: left; 
+  margin-right: 20px; 
+  width: 100px; 
 }
 
 .text-content::after {
@@ -138,15 +137,9 @@
   }
 
   .blog-image {
-    /* Set a maximum width for the image if necessary */
     width: 200px;
     height: 200px;
-    /* You can also set a fixed width for the image */
-    /* width: 300px; */
-    /* To add some space between the image and the posts */
     margin-left: 500px;
-   /* padding-top: 200px;*/
-    /*margin-bottom: 100px;*/
     margin-top: -150px;
    
     
@@ -155,12 +148,11 @@
 
   .blog-posts a {
     text-decoration: none;
-    color: blue; /* or any color that matches your design */
+    color: blue; 
 }
 
 .blog-posts a:hover {
     text-decoration: underline;
-   /* background-color: #47acdb;*/
     font-weight: 500;
     font-size: medium;
 }
