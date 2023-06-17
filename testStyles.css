@@ -22,7 +22,6 @@
   
   .header h1 {
     font-size: 48px;
-    margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -88,8 +87,8 @@
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    /*justify-content: center;*/
+    border: #444;
+    border-style: double;
   }
 
   .profile {
@@ -99,9 +98,23 @@
   
   .profile img {
     max-width: 100%;
-    height: auto;
     
   }
+
+  /* Add styles for your profile picture */
+.text-content img#profile-picture {
+  float: left; /* This can also be 'right' if you want the image to float to the right */
+  margin-right: 20px; /* This adds some space between the image and the text */
+  width: 100px; /* Adjust this to make your image the size you want */
+}
+
+.text-content::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
   .text-content {
     flex-grow: 1;
@@ -118,11 +131,47 @@
 
   .blog-posts {
     margin-top: 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    line-height: 1.5;
+    
   }
+
+  .blog-image {
+    /* Set a maximum width for the image if necessary */
+    width: 200px;
+    height: 200px;
+    /* You can also set a fixed width for the image */
+    /* width: 300px; */
+    /* To add some space between the image and the posts */
+    margin-left: 500px;
+   /* padding-top: 200px;*/
+    /*margin-bottom: 100px;*/
+    margin-top: -150px;
+   
+    
+
+}
+
+  .blog-posts a {
+    text-decoration: none;
+    color: blue; /* or any color that matches your design */
+}
+
+.blog-posts a:hover {
+    text-decoration: underline;
+   /* background-color: #47acdb;*/
+    font-weight: 500;
+    font-size: medium;
+}
+
   
   .blog-posts h3 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: -40px;
+    font-weight: bold;
+    color: #1512bd;
   }
   
   .blog-posts ul {
@@ -135,7 +184,7 @@
   
   /* Styling the footer */
   footer {
-    background-color: #444;
+    background-color: #5681d1;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -144,6 +193,7 @@
   footer h3 {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #444;
   }
   
   /* Responsive styles */
@@ -172,5 +222,9 @@
     footer h3 {
       font-size: 18px;
     }
+  }
+
+  .sharethis-inline-follow-buttons {
+    padding-left: 200px;
   }
   

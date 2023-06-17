@@ -9,28 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <h1>Vaidas Simkus</h1>
-        <h3>Empowered by Passion, Driven by Purpose!</h3>
-    </div>
-    <nav>
-    <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">My Interests</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Contact Me</a></li>
-    </ul>
-    </nav>
+    <header>
+        <div class="header">
+            <h1>Vaidas Simkus</h1>
+            <h3>Empowered by Passion, Driven by Purpose!</h3>
+        </div>
+        <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">My Interests</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact Me</a></li>
+        </ul>
+        </nav>
+    </header>
     <main>
         <section class="container">
-        <div class="profile">
-            <img id="profile-picture" src="image1.png" alt="Profile Picture">
-        </div>
-        </section>
-        <section class="container">
         <div class="text-content">
-        <h2>Welcome to my personal website!</h2>
+            <img id="profile-picture" src="image1.png" alt="Profile Picture of Vaidas Simkus">
+            <h2>Welcome to my personal website!</h2>
         <p>Hello, I'm Vaidas, currently immersed in an intensive bootcamp, sharpening my skills 
             in web and software development. Having made a bold career shift towards IT, I find myself 
             fascinated and motivated by the ever-evolving landscape of technology.
@@ -58,25 +56,27 @@
         <section class="container">
         <div class="blog-posts">
         <h3>My Blog Posts</h3>
-
+        <div class="posts-content">
         <ul>
-            <li><a href="#">Blog Post 1</a></li>
-            <li><a href="#">Blog Post 2</a></li>
-            <li><a href="#">Blog Post 3</a></li>
+            <li><a href="https://cryptobuzzdaily.blogspot.com/2023/05/understanding-cryptocurrency-beginners.html">Understanding Cryptocurrency: A Beginner's Guide</a></li>
+            <li><a href="https://cryptobuzzdaily.blogspot.com/2023/05/exploring-power-of-blockchain-technology.html">Exploring the Power of Blockchain Technology</a></li>
+            <li><a href="https://cryptobuzzdaily.blogspot.com/2023/05/bitcoin-unraveling-revolutionary.html">Bitcoin: Unraveling the Revolutionary Digital Currency</a></li>
 
         </ul>
         </div>
+        <img class="blog-image" src="blogPostImage.png" alt="Blog image">
+        </div>
         </section>
     </main>
-    <section class="container">
-    <div>
     <footer>
-        <h3>Connect with me</h3>
+        <div>
+        <section class="container">
+        <h3>Connect with me:</h3>
         <div class="sharethis-inline-follow-buttons"></div>
+        </section>
+        </div>
     </footer>
-    </div>
-    </section>
-    
+     
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=6482f5228bdd800012e15fa3&product=inline-follow-buttons&source=platform" async="async"></script> 
    
     <script src="app.js"></script>
