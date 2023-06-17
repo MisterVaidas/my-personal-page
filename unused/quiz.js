@@ -1,8 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    runQuiz();
+    
   });
-
+  guessNumber();
 
   
 
@@ -43,8 +43,41 @@ function runQuiz() {
         question: "5. What is my lucky number?",
         choices: ["1. 10", "2. 7", "3. 0.2", "4. 33"],
         answer: 1
-      }
+      },
     ];
+     
+ }
+ function guessNumber() {
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    //alert(randomNumber);
+   // console.log(randomNumber);
+
+   for (let x = 5; x >= 0; x--) {
+    let guesses = x;
+  
+    let guess = prompt("Guess a number between 1 and 100! You have 10 guesses and you have " + guesses + " guesses left!");
+  
+    guess = parseInt(guess);
+  
+    if (guess === randomNumber) {
+      // console.log("You win");
+      alert("You win");
+      break;
+    } else if (guess < randomNumber) {
+      // console.log("to low");
+      alert("to low");
+    } else if (guess > randomNumber) {
+      // console.log("to high");
+      alert("to high");
+    }
+  
+    if (x === 1) {
+      alert("The correct number was " + randomNumber);
+      break;
+    }
+  }
+     
+    
     
   
       
@@ -80,4 +113,3 @@ function runQuiz() {
       };
     
     
-  

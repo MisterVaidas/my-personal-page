@@ -1,0 +1,13 @@
+h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+section {
+    border: 15px solid red;
+    width: 80%;
+    margin: 5rem auto 0 auto;
+    height: 40rem;
+    position: static;
+
+}

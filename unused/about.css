@@ -1,0 +1,42 @@
+body { 
+    background-color: #C8C8C8; 
+    background-color: hsl(0,0%,78%);
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+} 
+
+h1 {
+    background-color: #e98686;
+    background-color: hsla(0,100%,100%,0.5);
+    color: #64645A;
+    padding: inherit;
+    font-size: 200%;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 1.3em;
+}
+p { 
+    background-color: #ffffff; 
+    background-color: hsla(0,100%,100%,0.5);
+    padding: 5px;
+    margin: 0px;
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+p.zero {    
+     background-color: rgb(238,62,128);
+    
+}
+
+p.one {
+    background-color: rgb(244,90,139);
+}
+
+p.ten {
+    background-color: rgb(84,182,237);
+}
